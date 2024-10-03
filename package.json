@@ -3,6 +3,9 @@
   "version": "1.5.2",
   "private": true,
   "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
+    "gh-pages": "^6.1.1",
     "moment": "2.29.4",
     "nouislider": "15.4.0",
     "react": ">=16.8.0",
@@ -22,9 +25,8 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.css",
     "minify-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.min.css --style compressed",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
-
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
